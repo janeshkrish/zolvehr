@@ -1,0 +1,18 @@
+.footer{
+  background-color: #fbf9fd;
+  padding: 40px 60px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #eee;
+}
+.footersection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.logo{
+    height: 42px;
+}
