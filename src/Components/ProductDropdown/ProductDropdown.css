@@ -28,6 +28,7 @@
 .column ul {
   list-style: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .column ul li {
@@ -36,6 +37,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color:rgb(185, 108, 224);
+  color:rgb(131, 124, 124)
 }
 
+.column ul li:hover{
+  color: #06A3DA;
+}

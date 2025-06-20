@@ -9,6 +9,11 @@ import img_3 from '../Components/assets/img3.jpg'
 import globe from '../Components/assets/earth.png'
 import company from '../Components/assets/company.png'
 import user from '../Components/assets/users.png'
+import cio from '../Components/assets/cio.png'
+import chro from '../Components/assets/chro.png'
+import admin from '../Components/assets/admin.png'
+import manager from '../Components/assets/manager.png'
+import employee from '../Components/assets/employee.png'
 import { CalendarOutlined, FileTextOutlined, LinkOutlined, MobileOutlined, SolutionOutlined } from '@ant-design/icons'
 import { Footer } from '../Components/Footer/Footer'
 
@@ -27,7 +32,7 @@ export const Landing = () => {
   },[])
 
   return (
-    <div>
+    <div className='bg'>
         <Navbar />
         <div className="custom-hero-container">
               <Row justify="center" align="middle" className='custom-hero-row'>
@@ -132,7 +137,7 @@ export const Landing = () => {
             <Col xs={24} sm={12} md={10} lg={8}>
               <Card className='issue-card yellow-card' bordered={false}>
                        <div className="card-icon yellow-icon"><CalendarOutlined /></div>
-                       <Title level={4}>You’re still using old ways to capture and track leaves and attendance</Title> 
+                       <Title level={4}>You're still using old ways to capture and track leaves and attendance</Title> 
                        <Text>150+ basic and advanced admin reports covering Leave and Attendance, 
                         Payroll, MIS, Claims, Welfare and State-level Policies
                        </Text>  
@@ -164,6 +169,55 @@ export const Landing = () => {
              A platform loved by everyone in your company - by employers and employees
           </Text>
           <hr/>
+          <div className='users-roles-section'>
+                  <div className="role-cards">
+                        <div className='role'>
+                            <img src={cio} alt="cio" />
+                            <p>CIO</p>
+                        </div>
+                        <div className='role'>
+                            <img src={chro} alt="chro" />
+                            <p>CHRO</p>
+                        </div>
+                        <div className='role'>
+                            <img src={admin} alt="payroll admin" />
+                            <p>Payroll Admin</p>
+                        </div>
+                        <div className='role'>
+                            <img src={manager} alt="managers" />
+                            <p>Managers</p>
+                        </div>
+                        <div className='role'>
+                            <img src={employee} alt="employees" />
+                            <p>Employees</p>
+                        </div>
+                  </div> 
+                  <div className="benefits-comparison">
+                        <div className="without">
+                          <h3>
+                            Without Zolve-HR
+                          </h3>
+                          <ul>
+                            <li>Data security concerns and system compatibility issues.</li>
+                            <li>Low user adoption rates.</li>
+                            <li>No guided implementation.</li>
+                          </ul>
+                        </div>
+                        <div className="with">
+                          <h3>With Zolve-HR</h3>
+                          <p>
+                            No compliance nightmares! greytHR's own implementation team works with your IT, to ensure seamless implementation and integration of HR tech, with the assurance of data security and scalability.
+                          </p>
+                        </div>
+                  </div>   
+                 <Title className="hero-title1">
+                    The <span className="zolvetxt">Customers </span> have spoken
+                  </Title>
+                  <Text className="hero-subtext">
+                    Depth of our features, ease of implementation and adoption, devoted after sales and support, cost-effectiveness - just a few things our 30000+ customers love about us
+                  </Text> 
+                  <hr className='line'/>
+          </div>
         </div>
         <Footer />
     </div>
