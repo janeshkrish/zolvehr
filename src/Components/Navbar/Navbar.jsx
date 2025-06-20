@@ -4,6 +4,9 @@ import logo_img from '../assets/logo.png'
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { ProductDropdown } from '../ProductDropdown/ProductDropdown';
+import { PartnerDropdown } from '../PartnerDropdown/PartnerDropdown';
+import { ResourcesDropdown } from '../ResourcesDropdown/ResourcesDropdown';
+import { ComapanyDropdown } from '../CompanyDropdown/ComapanyDropdown';
 
 export const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -24,8 +27,11 @@ export const Navbar = () => {
             <li className='nav-items'>Pricing</li>
             <li className='nav-items'>Customer</li>
             <li className='nav-items' onClick={()=>toggleDropdown("partner")}>Partner {openDropdown === "partner" ? <FaChevronUp className='arrow' /> : <FaChevronDown className='arrow'/>}</li>
+            {openDropdown === "partner" && <PartnerDropdown />}
             <li className='nav-items' onClick={()=>toggleDropdown("resources")}>Resources {openDropdown === "resources" ? <FaChevronUp className='arrow' /> : <FaChevronDown className='arrow'/>}</li>
+            {openDropdown === "resources" && <ResourcesDropdown />}
             <li className='nav-items' onClick={()=>toggleDropdown("company")}>Company {openDropdown === "company" ? <FaChevronUp className='arrow' /> : <FaChevronDown className='arrow'/>}</li>
+            {openDropdown === "company" && <ComapanyDropdown />}
           </ul>
         </div>
         <div className="right-section">

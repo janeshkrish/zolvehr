@@ -3,8 +3,8 @@ import { Navbar } from '../Components/Navbar/Navbar'
 import './CSS/Landing.css'
 import { Link } from 'react-router-dom'
 import { Button, Card, Row, Col, Typography } from 'antd'
-import img_1 from '../Components/assets/img1.jpg'
-import img_2 from '../Components/assets/img2.jpg'
+import img_1 from '../Components/assets/img1.png'
+import img_2 from '../Components/assets/img2.png'
 import img_3 from '../Components/assets/img3.jpg'
 import globe from '../Components/assets/earth.png'
 import company from '../Components/assets/company.png'
@@ -14,6 +14,13 @@ import chro from '../Components/assets/chro.png'
 import admin from '../Components/assets/admin.png'
 import manager from '../Components/assets/manager.png'
 import employee from '../Components/assets/employee.png'
+import ram from '../Components/assets/ram.png'
+import acadamy from '../Components/assets/acadamy.avif'
+import community from '../Components/assets/community.avif'
+import library from '../Components/assets/library.avif'
+import wiki from '../Components/assets/wiki.avif'
+import podcast from '../Components/assets/podcasts.avif'
+import webinar from '../Components/assets/webinars.avif'
 import { CalendarOutlined, FileTextOutlined, LinkOutlined, MobileOutlined, SolutionOutlined } from '@ant-design/icons'
 import { Footer } from '../Components/Footer/Footer'
 
@@ -37,13 +44,13 @@ export const Landing = () => {
         <div className="custom-hero-container">
               <Row justify="center" align="middle" className='custom-hero-row'>
                   <Col xs={24} md={12} className='custom-hero-content'>
-                      <Title level={1} className='hero-title'>
+                      <Title level={1} className='custom-hero-title'>
                           Give a head start to your <br />HR Function
                       </Title>
-                      <Text className="hero-subtext">
+                      <Text className="custom-hero-subtext">
                         We take away the HR headaches so you can focus on serving clients and growing your business.
                       </Text>
-                      <a href="#more"><Button type="primary" size="large" className="main-btn" style={{ marginTop: 20 }}>
+                      <a href="#more"><Button type="primary" size="large" className="custom-main-btn" style={{ marginTop: 20 }}>
                         Learn More →
                       </Button></a>
                       <div className="custom-slide-indicator">
@@ -217,6 +224,93 @@ export const Landing = () => {
                     Depth of our features, ease of implementation and adoption, devoted after sales and support, cost-effectiveness - just a few things our 30000+ customers love about us
                   </Text> 
                   <hr className='line'/>
+                  <div className="workersection">
+                    <div className="workercontent">
+                      <div className="workerimg">
+                        <img src={ram} alt="" />
+                      </div>
+                      <div className="workertext">
+                        <p className="quote">“ ZolvelHR is our go-to software… ”</p>
+                        <p className="description"> …for streamlined HR processes, including Employee Information Management, Payroll, Leave Management,
+                  Attendance Management, Onboarding, HR Help Desk, Letters, Tasks & Checklists, Offboarding/Exit Workflow,
+                  and Payroll Compliance. Among them, Payroll and Tasks & Checklists are our top choices due to their
+                  user-friendly interface and the expertise of the ZolveHR team.</p>
+                        <div className="workername">
+                          <strong>Ram G</strong><br />
+                          Head of HR | AKR Industries Pvt. Ltd.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <Title className="hero-title1">
+                    Get full access to the ZolveHR <span className="zolvetxt">Ecosystem</span>
+                  </Title>
+                  <Text className="hero-subtext">
+                     ZolveHR users are backed by our strong community, led by industry thought leaders and practitioners
+                  </Text> 
+                  <hr className='line'/>
+                  <Row gutter={[24,24]} justify="center" className='issue-grid'>
+            <Col xs={24} sm={12} md={10} lg={8}>
+              <Card className='issue-card green-card' bordered={false}>
+                       <div className="card-icon"><img src={acadamy} alt="" /></div>
+                       <Title level={4}>ZolveHR Academy</Title> 
+                       <Text>Only academy offering courses for HR & Payroll in India
+                       </Text> 
+                       <br />
+                       <Link to="/freetrial"><Text><span className='zolvetxt know'>Know More</span> </Text></Link>
+              </Card>
+            </Col>
+            <Col xs={24} sm={12} md={10} lg={8}>
+              <Card className='issue-card blue-card' bordered={false}>
+                       <div className="card-icon"><img src={community} alt="" /></div>
+                       <Title level={4}>ZolveHR Community</Title> 
+                       <Text>Membership to nationwide online HR community
+                       </Text> 
+                       <br />
+                       <Link to="/freetrial"><Text><span className='zolvetxt know'>Know More</span> </Text></Link>
+              </Card>
+            </Col>
+            <Col xs={24} sm={12} md={10} lg={8}>
+              <Card className='issue-card yellow-card' bordered={false}>
+                       <div className="card-icon"><img src={library} alt="" /></div>
+                       <Title level={4}>ZolveHR Resource Library</Title> 
+                       <Text>Blogs, guides & templates for all things HR
+                       </Text> 
+                       <br />
+                       <Link to="/freetrial"><Text><span className='zolvetxt know'>Know More</span> </Text></Link>
+              </Card>
+            </Col>
+            <Col xs={24} sm={12} md={10} lg={8}>
+              <Card className='issue-card yellow-card' bordered={false}>
+                       <div className="card-icon"><img src={wiki} alt="" /></div>
+                       <Title level={4}>HR Compliances Wiki</Title> 
+                       <Text>Ready reckoner for HR professionals
+                       </Text> 
+                       <br />
+                       <Link to="/freetrial"><Text><span className='zolvetxt know'>Know More</span> </Text></Link>
+              </Card>
+            </Col>
+            <Col xs={24} sm={12} md={10} lg={8}>
+              <Card className='issue-card purple-card' bordered={false}>
+                       <div className="card-icon"><img src={podcast} alt="" /></div>
+                       <Title level={4}>ZolveHR Podcasts</Title> 
+                       <Text>Podcasts by HR experts on trending HR topics
+                       </Text> 
+                       <br />
+                       <Link to="/freetrial"><Text><span className='zolvetxt know'>Know More</span> </Text></Link>
+              </Card>
+            </Col>
+            <Col xs={24} sm={12} md={10} lg={8}>
+              <Card className='issue-card green-card' bordered={false}>
+                       <div className="card-icon"><img src={webinar} alt="" /></div>
+                       <Title level={4}>Parichay Webinars</Title> 
+                       <Text>Expert webinars on trending HR and compliance topics
+                       </Text> 
+                       <br />
+                       <Link to="/freetrial"><Text><span className='zolvetxt know'>Know More</span></Text></Link>
+              </Card>
+            </Col>
+          </Row>
           </div>
         </div>
         <Footer />

@@ -1,0 +1,46 @@
+.company-dropdown {
+  position: absolute;
+  top: 100%; 
+  left: 70%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 20px 30px;
+  width: 170px; 
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.companycolumns {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+
+.columns {
+  flex: 1;
+}
+
+.columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columns ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.columns ul li:hover {
+  color: #06A3DA;
+}
