@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react'
-import './Terms.css'
+import React from 'react'
+import './Privacy.css'
 
-export const Terms = () => {
-   useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
-
+export const Privacy = () => {
   return (
     <div className='terms-container'>
             <div className="terms-content">

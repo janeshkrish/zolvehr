@@ -5,20 +5,26 @@ import { Landing } from './Pages/Landing';
 import { Login } from './Components/Login/Login';
 import { Freetrial } from './Pages/Freetrial';
 import { Terms } from './Components/Terms/Terms';
-import { ScrollManager } from './Components/Scroll/ScrollManager';
+import { useEffect } from 'react';
+import { Privacy } from './Components/Privacy/Privacy';
 
 
 function App() {
+  useEffect(() => {
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual';
+  }
+}, []);
   return (
     <div className="App">
       <Router>
-        <ScrollManager />
         <Routes> 
           <Route path="/" element={<Landing/>} />
           <Route path='/login' element={<Login/>}/>
           <Route path="/signup" element={<SignUp/>} />
           <Route path='/freetrial' element={<Freetrial/>} />
           <Route path='/terms' element={<Terms />}/>
+          <Route path='/privacy' element={<Privacy />} />
         </Routes>
       </Router>
     </div>

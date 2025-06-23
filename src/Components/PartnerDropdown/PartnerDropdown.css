@@ -35,14 +35,44 @@
   margin-bottom: 12px;
   font-weight: 500;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .column ul li:hover {
   color: #06A3DA;
 }
 
-.column ul li svg {
-  font-size: 16px;
-  color: #888;
+
+@media (max-width: 768px) {
+  .partner-dropdown {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .column ul li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-dropdown {
+    padding: 14px;
+  }
+
+  .column ul li {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .column ul li svg {
+    font-size: 14px;
+  }
 }

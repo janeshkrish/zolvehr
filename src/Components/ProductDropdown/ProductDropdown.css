@@ -43,3 +43,39 @@
 .column ul li:hover{
   color: #06A3DA;
 }
+@media (max-width: 768px) {
+  .product-dropdown {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    padding: 16px;
+  }
+
+  .productcolumns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .column ul li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-dropdown {
+    padding: 14px;
+  }
+
+  .column h4 {
+    font-size: 15px;
+  }
+
+  .column ul li {
+    font-size: 12px;
+  }
+}

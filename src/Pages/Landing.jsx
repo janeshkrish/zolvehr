@@ -39,6 +39,14 @@ export const Landing = () => {
     return () => clearInterval(interval)
   },[])
 
+ useEffect(() => {
+    const savedScroll = sessionStorage.getItem('landingScrollY');
+    if (savedScroll) {
+      window.scrollTo(0, parseInt(savedScroll));
+      sessionStorage.removeItem('landingScrollY'); 
+    }
+  }, []);
+
   return (
     <div className='bg'>
         <Navbar />
@@ -231,7 +239,7 @@ export const Landing = () => {
                         <img src={ram} alt="" />
                       </div>
                       <div className="workertext">
-                        <p className="quote">“ ZolvelHR is our go-to software… ”</p>
+                        <p className="quote">“ ZolveHR is our go-to software… ”</p>
                         <p className="description"> …for streamlined HR processes, including Employee Information Management, Payroll, Leave Management,
                   Attendance Management, Onboarding, HR Help Desk, Letters, Tasks & Checklists, Offboarding/Exit Workflow,
                   and Payroll Compliance. Among them, Payroll and Tasks & Checklists are our top choices due to their

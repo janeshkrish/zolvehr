@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 import './Navbar.css'
 import logo_img from '../assets/logo.png'
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";

@@ -2,9 +2,15 @@ h1:where(.css-dev-only-do-not-override-36gkoj).ant-typography {
     margin-bottom: 0.5em;
     color: rgba(0, 0, 0, 0.88);
     font-weight: 600;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1.2105263157894737;
 }
+
+:where(.css-dev-only-do-not-override-36gkoj).ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover{
+  background: #06A3DA;
+  color: #fff;
+}
+
 .hero-section {
   padding: 50px 20px;
   display: flex;
@@ -484,4 +490,133 @@ h1:where(.css-dev-only-do-not-override-36gkoj).ant-typography {
 
 .know {
   cursor: pointer
+}
+
+/* Tablet and below */
+@media (max-width: 992px) {
+  .custom-hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .custom-hero-content {
+    padding: 1rem;
+  }
+
+  .custom-hero-title {
+    font-size: 2.8rem;
+  }
+
+  .custom-hero-subtext {
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+
+  .custom-main-btn {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .custom-carousel-img {
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .issue-grid {
+    padding: 30px 20px;
+  }
+
+  .card-icon img {
+    margin-left: auto;
+  }
+
+  .workerimg img {
+    width: 120px;
+  }
+
+  .workersection {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-title,
+  .hero-title1 {
+    font-size: 28px;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .line {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .role {
+    width: 100px;
+    padding: 0.5rem;
+  }
+
+  .custom-carousel-img {
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-btn,
+  .login_btn {
+    width: 100%;
+  }
+
+  .workerimg img {
+    width: 100px;
+  }
+
+  .custom-hero-title {
+    font-size: 2rem;
+  }
+
+  .custom-hero-subtext {
+    font-size: 1rem;
+  }
+
+  .custom-main-btn {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .workername {
+    font-size: 12px;
+    padding: 0.7rem 1rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
 }

@@ -44,3 +44,37 @@
 .columns ul li:hover {
   color: #06A3DA;
 }
+
+@media (max-width: 768px) {
+  .company-dropdown {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 20px;
+    flex-direction: column;
+  }
+
+  .companycolumns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .columns {
+    width: 100%;
+  }
+
+  .columns ul li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-dropdown {
+    padding: 14px;
+  }
+
+  .columns ul li {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
