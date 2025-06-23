@@ -1,5 +1,5 @@
 .footer {
-  background-color: #06A3DA;
+  background-color: #057bbf;
   color: white;
   padding: 40px;
   font-family: Arial, sans-serif;
@@ -56,6 +56,33 @@
   cursor: pointer;
 }
 
+.policy-links {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+}
+
+.policy-links a:hover {
+  text-decoration: underline;
+  color: #d4ecff;
+}
+
+.terms:hover {
+  text-decoration: underline;
+  color: #d4ecff;
+}
+
+.terms {
+  color: white;
+  text-decoration: none;
+}
+
+.policy-links a {
+  color: white;
+  text-decoration: none;
+}
+
 .footersection {
   display: flex;
   justify-content: space-between;
@@ -84,6 +111,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  color: white;
+}
+
+.columns ul li:hover {
+  color: white;
 }
 
 .columns p {

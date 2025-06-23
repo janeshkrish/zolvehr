@@ -27,6 +27,7 @@ import { Footer } from '../Components/Footer/Footer'
 
 
 export const Landing = () => {
+
   const {Title,Text} = Typography
   const images = [img_1,img_2,img_3]
   const [currentImageIndex,setCurrentImageIndex] = useState(0)
