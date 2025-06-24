@@ -11,6 +11,10 @@ h1:where(.css-dev-only-do-not-override-36gkoj).ant-typography {
   color: #fff;
 }
 
+.bg{
+  background: linear-gradient(to right, #f3fcff,rgb(255, 255, 255));
+}
+
 .hero-section {
   padding: 50px 20px;
   display: flex;
@@ -71,7 +75,19 @@ h1:where(.css-dev-only-do-not-override-36gkoj).ant-typography {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.1);
+}
+
+.issue-card{
+  transition: transform 0.3s ease;
+}
+
+.issue-card:hover {
+  transform: scale(1.1);
 }
 
 .card-green {
@@ -132,6 +148,7 @@ h1:where(.css-dev-only-do-not-override-36gkoj).ant-typography {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(to right, #f3fcff,rgb(255, 255, 255));
 }
 
 .custom-hero-row {
@@ -449,6 +466,11 @@ h1:where(.css-dev-only-do-not-override-36gkoj).ant-typography {
   width: 180px;
   height: auto;
   border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.workerimg img:hover{
+  transform: scale(1.1);
 }
 
 .workertext {
@@ -568,6 +590,7 @@ h1:where(.css-dev-only-do-not-override-36gkoj).ant-typography {
     flex-direction: column;
     gap: 20px;
   }
+  
 
   .stat-card {
     width: 100%;

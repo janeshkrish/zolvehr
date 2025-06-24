@@ -7,6 +7,7 @@ import { Freetrial } from './Pages/Freetrial';
 import { Terms } from './Components/Terms/Terms';
 import { useEffect } from 'react';
 import { Privacy } from './Components/Privacy/Privacy';
+import { Customer } from './Pages/Customer';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/freetrial' element={<Freetrial/>} />
           <Route path='/terms' element={<Terms />}/>
           <Route path='/privacy' element={<Privacy />} />
+          <Route path='/customer' element={<Customer/>} />
         </Routes>
       </Router>
     </div>
