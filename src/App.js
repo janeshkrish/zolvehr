@@ -8,6 +8,7 @@ import { Terms } from './Components/Terms/Terms';
 import { useEffect } from 'react';
 import { Privacy } from './Components/Privacy/Privacy';
 import { Customer } from './Pages/Customer';
+import { Pricing } from './Pages/Pricing';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='/terms' element={<Terms />}/>
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/customer' element={<Customer/>} />
+          <Route path='/pricing' element={<Pricing />} />
         </Routes>
       </Router>
     </div>

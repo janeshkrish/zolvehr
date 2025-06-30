@@ -29,14 +29,12 @@ export const Navbar = () => {
          {mobileMenuOpen ? <FaTimes /> : <FaBars />}
          </div>
         </div>
-
-
       <div className={`center-section ${mobileMenuOpen ? 'show' : ''}`}>
         <ul className="nav-links">
           <Link to="/" className='homebtn'><li className='nav-items'>Home</li></Link>
           <li className='nav-items' onClick={() => toggleDropdown("product")}>Product {openDropdown === "product" ? <FaChevronUp className='arrow' /> : <FaChevronDown className='arrow' />}</li>
           {openDropdown === "product" && <ProductDropdown />}
-          <li className='nav-items'>Pricing</li>
+          <Link to="/pricing" className='homebtn'><li className='nav-items'>Pricing</li></Link>
           <Link to="/customer" className='homebtn'><li className='nav-items'>Customer</li></Link>
           <li className='nav-items' onClick={() => toggleDropdown("partner")}>Partner {openDropdown === "partner" ? <FaChevronUp className='arrow' /> : <FaChevronDown className='arrow' />}</li>
           {openDropdown === "partner" && <PartnerDropdown />}
